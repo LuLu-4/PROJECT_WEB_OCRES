@@ -1,0 +1,13 @@
+
+.Navigation {
+    display: flex;
+    background-color: black;
+}
+
+
+.nav-active {
+    margin-left: 8.333%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: red;
+}
