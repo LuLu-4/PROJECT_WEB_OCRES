@@ -1,7 +1,8 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import 'C:/Users/Pierre Lapalut/Documents/PROJECT_WEB_OCRES/frontend/src/styles/navigation.css';
-import logo from 'C:/Users/Pierre Lapalut/Documents/PROJECT_WEB_OCRES/frontend/src/formula-1-logo.png';
+import '../styles/navigation.css';
+import logo from '../formula-1-logo.png';
+
 
 const Navigation = () => {
     return (
