@@ -15,11 +15,12 @@ const Countries = () => {
 
     return (
         <div className='countries'>
-            <ul className='countries-list'>
-                {data.map((country) => (
-                    <li>{country.name}</li>
-                ))}
-            </ul>
+            {data.map((country) => (
+                <p>
+                    {country.name} <br />
+                    {country.image}
+                </p>
+            ))}
         </div>
     )
         ;
