@@ -16,10 +16,12 @@ const Countries = () => {
     return (
         <div className='countries'>
             {data.map((country) => (
-                <p>
-                    {country.name} <br />
-                    {country.image}
-                </p>
+
+                <td className='logo-nom'>
+                    <img src={country.image} alt="" className="" />
+                    <th className='nameCrypto'>{country.name}</th>
+                </td>
+
             ))}
         </div>
     )

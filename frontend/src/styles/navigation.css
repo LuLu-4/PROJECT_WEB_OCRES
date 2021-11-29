@@ -1,14 +1,15 @@
 
 .Navigation {
-    display: flex;
-    background-color: black;
+    background-color:rgb(63, 63, 216);
 }
 
 
 .nav-active {
-    margin-left: 8.333%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    color: red;
+    margin-left: 5%;
+    color:black;
     text-decoration: blink;
+}
+
+.nav-active-logo {
+    margin-left: 5%;
 }
