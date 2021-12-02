@@ -1,0 +1,12 @@
+.imgMovie{
+  margin-top: 2px;
+  height: 33vh;
+  width: 25vh;
+  background-size: contain;
+}
+
+.titleMovie{
+  margin-top: 2px;
+  font-size: 1.2em;
+  text-decoration: underline;
+}

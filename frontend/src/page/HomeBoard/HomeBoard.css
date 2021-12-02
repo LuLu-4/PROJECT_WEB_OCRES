@@ -1,0 +1,43 @@
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 2px 2px #867575;
+  text-decoration: underline;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+.backgroundTitle {
+  background-color: rgba(100, 148, 236, 0.185);
+  padding: 1px;
+}
+
+
+.widget {
+  text-align: center;
+  font-size: 16px;
+  margin: 2em;
+  height: 30em;
+  background-color: rgba(147, 210, 252, 0.26);
+  border-radius: 2em;
+}
+
+.widgetTitle {
+  text-align: center;
+  font-size: 1.5em;
+  text-decoration: underline;
+  font-weight: bold;
+  background-color: rgba(33, 148, 194, 0.76);
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.settings {
+  text-align: center; ;
+  font-weight: bold;
+  background-color: rgba(190, 190, 190, 0.541);
+}

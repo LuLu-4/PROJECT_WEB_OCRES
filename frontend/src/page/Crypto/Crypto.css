@@ -1,0 +1,22 @@
+.imgCrypto {
+  margin-top: 2px;
+  height: 27vh;
+  width: 29vh;
+  background-size: contain;
+}
+
+.titleCrypto {
+  margin-top: 2px;
+  font-size: 1.3em;
+  text-decoration: underline;
+  margin-bottom: 1em;
+}
+
+.infoCrypto {
+  margin-left: 2em;
+  text-align: left;
+}
+.infoCryptoText {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}

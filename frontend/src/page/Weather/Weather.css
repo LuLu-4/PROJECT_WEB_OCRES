@@ -1,0 +1,22 @@
+.imgWeather {
+  margin-top: 2px;
+  height: 27vh;
+  width: 29vh;
+  background-size: contain;
+}
+
+.titleWeather {
+  margin-top: 2px;
+  font-size: 1.3em;
+  text-decoration: underline;
+  margin-bottom: 1em;
+}
+
+.infoWeather {
+  margin-left: 2em;
+  text-align: left;
+}
+.infoWeatherText {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}

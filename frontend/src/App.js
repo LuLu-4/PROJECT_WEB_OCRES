@@ -1,23 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './styles/App.css';
-import Home from './pages/Home';
-import About from './pages/About';
-import NotFound from './pages/NotFound';
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import HomeBoard from './page/HomeBoard/HomeBoard';
+import Settings from './page/Settings/Settings';
 
-function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/a-propos" exact component={About} />
-          <Route component={NotFound} />
-        </Switch>
-      </BrowserRouter>
-    </div>
+function App(props) {
+  return(
+    <Router>
+        <div>
+          <Route exact path="/" component={HomeBoard} />
+          <Route exact path="/settings" component={Settings} />
+        </div>
+      </Router>
   );
 }
-
 export default App;
