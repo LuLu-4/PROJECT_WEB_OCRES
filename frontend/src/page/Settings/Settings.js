@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
-import {Grid, Button, TextField, Snackbar } from '@material-ui/core'
+import { Grid, Button, TextField, Snackbar } from '@material-ui/core'
 import Alert from '@material-ui/lab/Alert';
 import API from '../../API/API';
 import './Settings.css'
@@ -28,7 +28,7 @@ export default function Settings() {
       setMsg("Ville changé !")
     }
   }
-  
+
   function changeCrypto() {
     if (crypto.length > 0) {
       localStorage.setItem("crypto", crypto)
@@ -80,16 +80,18 @@ export default function Settings() {
     API.DeleteName(del)
     setMsg("Prénom supprimé !")
     setDel("")
-    setOpen(true) 
+    setOpen(true)
   }
 
   function handleClick() {
     history.push("/");
   }
 
-    return (
-      <div >
-      <div className="title" >PARAMETRES</div>
+  return (
+    <div >
+      <Grid xs={12} className='backgroundTitle'>
+        <div className="title" >PARAMETRES</div>
+      </Grid>
       <Grid container >
         <Snackbar
           open={open}
@@ -101,50 +103,50 @@ export default function Settings() {
             {msg}
           </Alert>
         </Snackbar>
-      <Grid container xs={6} >
-        <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
-          <div>Ville pour la météo : </div>
-          <TextField style={{marginLeft:'1em', marginRight:'1em'}} variant="outlined" value={weatherCity} onChange={(event) => setWeatherCity(event.target.value)}/>
-          <Button disabled={weatherCity ? false : true} onClick={changeWeatherCity}>Confirmer</Button>
+        <Grid container xs={6} >
+          <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
+            <div style={{ fontWeight: 'bold', color: '#063061' }}>Ville pour la météo : </div>
+            <TextField style={{ marginLeft: '1em', marginRight: '1em' }} variant="outlined" value={weatherCity} onChange={(event) => setWeatherCity(event.target.value)} />
+            <Button disabled={weatherCity ? false : true} style={{ fontWeight: 'bold', color: '#CDAC38' }} onClick={changeWeatherCity}>Confirmer</Button>
+          </Grid>
+          <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
+            <div style={{ fontWeight: 'bold', color: '#063061' }}>Changer de monnaie : </div>
+            <TextField style={{ marginLeft: '1em', marginRight: '1em' }} variant="outlined" value={crypto} onChange={(event) => setCrypto(event.target.value)} />
+            <Button disabled={crypto ? false : true} style={{ fontWeight: 'bold', color: '#CDAC38' }} onClick={changeCrypto}>Confirmer</Button>
+          </Grid>
+          <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
+            <div style={{ fontWeight: 'bold', color: '#063061' }}>Changer année film : </div>
+            <TextField style={{ marginLeft: '1em', marginRight: '1em' }} variant="outlined" value={movieYear} onChange={(event) => setMovieYear(event.target.value)} />
+            <Button disabled={movieYear ? false : true} style={{ fontWeight: 'bold', color: '#CDAC38' }} onClick={changeMovieYear}>Confirmer</Button>
+          </Grid>
+          <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
+            <div style={{ fontWeight: 'bold', color: '#063061' }}>Modifier le graphe : </div>
+            <TextField style={{ marginLeft: '1em', marginRight: '1em' }} label="Crypto" variant="outlined" value={changeCryptoGraphe} onChange={(event) => setChangeCryptoGraphe(event.target.value)} />
+            <TextField style={{ marginLeft: '1em', marginRight: '1em' }} label="Monnaie" variant="outlined" value={changeMonnaieGraphe} onChange={(event) => setChangeMonnaieGraphe(event.target.value)} />
+            <Button disabled={changeCryptoGraphe && changeMonnaieGraphe ? false : true} style={{ fontWeight: 'bold', color: '#CDAC38' }} onClick={changeCryptoGrapĥe}>Confirmer</Button>
+          </Grid>
         </Grid>
-        <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
-          <div>Changer de monnaie : </div>
-          <TextField style={{marginLeft:'1em', marginRight:'1em'}} variant="outlined" value={crypto} onChange={(event) => setCrypto(event.target.value)}/>
-          <Button disabled={crypto ? false : true} onClick={changeCrypto}>Confirmer</Button>
-        </Grid>
-        <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
-          <div>Changer année film : </div>
-          <TextField style={{marginLeft:'1em', marginRight:'1em'}} variant="outlined" value={movieYear} onChange={(event) => setMovieYear(event.target.value)}/>
-          <Button disabled={movieYear ? false : true} onClick={changeMovieYear}>Confirmer</Button>
-        </Grid>
-        <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
-          <div>Modifier le graphe : </div>
-          <TextField style={{marginLeft:'1em', marginRight:'1em'}} label="Crypto" variant="outlined" value={changeCryptoGraphe} onChange={(event) => setChangeCryptoGraphe(event.target.value)}/>
-          <TextField style={{marginLeft:'1em', marginRight:'1em'}} label="Monnaie" variant="outlined" value={changeMonnaieGraphe} onChange={(event) => setChangeMonnaieGraphe(event.target.value)}/>
-          <Button disabled={changeCryptoGraphe && changeMonnaieGraphe ? false : true} onClick={changeCryptoGrapĥe}>Confirmer</Button>
-        </Grid>
-      </Grid>
-      <Grid container xs={6}>
-        <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
-          <div>Ajouter un prénom : </div>
-          <TextField style={{marginLeft:'1em', marginRight:'1em'}} variant="outlined" value={add} onChange={(event) => setAdd(event.target.value)}/>
-          <Button disabled={add ? false : true} onClick={addName}>Confirmer</Button>
-        </Grid>
-        <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
-          <div>Supprimer un prénom : </div>
-          <TextField style={{marginLeft:'1em', marginRight:'1em'}} variant="outlined" value={del} onChange={(event) => setDel(event.target.value)}/>
-          <Button disabled={del ? false : true} onClick={deleteName}>Confirmer</Button>
-        </Grid>
-        <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
-          <div>Modifier un prénom : </div>
-          <TextField style={{marginLeft:'1em', marginRight:'1em'}} label="Ancien prénom" variant="outlined" value={updateFrom} onChange={(event) => setUpdateFrom(event.target.value)}/>
-          <TextField style={{marginLeft:'1em', marginRight:'1em'}} label="Nouveau prénom" variant="outlined" value={updateTo} onChange={(event) => setUpdateTo(event.target.value)}/>
-          <Button disabled={updateFrom && updateTo ? false : true} onClick={updateName}>Confirmer</Button>
-        </Grid>
+        <Grid container xs={6}>
+          <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
+            <div style={{ fontWeight: 'bold', color: '#063061' }}>Ajouter un prénom : </div>
+            <TextField style={{ marginLeft: '1em', marginRight: '1em' }} variant="outlined" value={add} onChange={(event) => setAdd(event.target.value)} />
+            <Button disabled={add ? false : true} style={{ fontWeight: 'bold', color: '#CDAC38' }} onClick={addName}>Confirmer</Button>
+          </Grid>
+          <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
+            <div style={{ fontWeight: 'bold', color: '#063061' }}>Supprimer un prénom : </div>
+            <TextField style={{ marginLeft: '1em', marginRight: '1em' }} variant="outlined" value={del} onChange={(event) => setDel(event.target.value)} />
+            <Button disabled={del ? false : true} style={{ fontWeight: 'bold', color: '#CDAC38' }} onClick={deleteName}>Confirmer</Button>
+          </Grid>
+          <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
+            <div style={{ fontWeight: 'bold', color: '#063061' }}>Modifier un prénom : </div>
+            <TextField style={{ marginLeft: '1em', marginRight: '1em' }} label="Ancien prénom" variant="outlined" value={updateFrom} onChange={(event) => setUpdateFrom(event.target.value)} />
+            <TextField style={{ marginLeft: '1em', marginRight: '1em' }} label="Nouveau prénom" variant="outlined" value={updateTo} onChange={(event) => setUpdateTo(event.target.value)} />
+            <Button disabled={updateFrom && updateTo ? false : true} style={{ fontWeight: 'bold', color: '#CDAC38' }} onClick={updateName}>Confirmer</Button>
+          </Grid>
         </Grid>
       </Grid>
       <Grid item xs={12} className='settings'>
-        <Button fullWidth style={{fontSize:'1em', fontWeight:'bold', padding:'1em'}} onClick={handleClick}>Retourner au Dashboard</Button>
+        <Button fullWidth style={{ fontSize: '1em', fontWeight: 'bold', padding: '1em' }} onClick={handleClick}>Retourner au Dashboard</Button>
       </Grid>
     </div>
   );
