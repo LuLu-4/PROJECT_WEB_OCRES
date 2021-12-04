@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 import API from '../../API/API'
 import './Weather.css'
 
-export default function HomeBoard() {
+export default function Weather() {
   const [weather, setWeather] = useState([]);
 
   useEffect(() => {
