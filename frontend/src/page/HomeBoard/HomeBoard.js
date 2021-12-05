@@ -33,7 +33,7 @@ export default function HomeBoard() {
         </Grid>
         <Grid container xs={5} className='widget'>
           <Grid item xs={12}>
-            <div className='widgetTitle'>Films</div>
+            <div className='widgetTitle'>TOP Films</div>
           </Grid>
           <Grid item xs={12}>
             <Movies />
@@ -41,7 +41,7 @@ export default function HomeBoard() {
         </Grid>
         <Grid container xs={5} className='widget'>
           <Grid item xs={12}>
-            <div className='widgetTitle'>Top 10 prénoms France</div>
+            <div className='widgetTitle'>Mes destinations</div>
           </Grid>
           <Grid item xs={12}>
             <Name />
@@ -49,7 +49,7 @@ export default function HomeBoard() {
         </Grid>
         <Grid container xs={5} className='widget'>
           <Grid item xs={12}>
-            <div className='widgetTitle'>Crypto</div>
+            <div className='widgetTitle'>TOP 10 - Cryptomonnaies</div>
           </Grid>
           <Grid item xs={12}>
             <Crypto />
@@ -57,7 +57,7 @@ export default function HomeBoard() {
         </Grid>
         <Grid container xs={5} className='widget'>
           <Grid item xs={12}>
-            <div className='widgetTitle'>Graphe</div>
+            <div className='widgetTitle'>Graphique Cryptomonnaies</div>
           </Grid>
           <Grid item xs={12}>
             <Graphe />
@@ -65,7 +65,7 @@ export default function HomeBoard() {
         </Grid>
         <Grid container xs={5} className='widget'>
           <Grid item xs={12}>
-            <div className='widgetTitle'>Nasa : Photo du jour </div>
+            <div className='widgetTitle'>Nasa - Photo du jour </div>
           </Grid>
           <Grid item xs={12}>
             <Nasa />

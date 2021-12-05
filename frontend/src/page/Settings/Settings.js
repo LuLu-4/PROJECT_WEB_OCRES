@@ -90,7 +90,7 @@ export default function Settings() {
   return (
     <div >
       <Grid xs={12} className='backgroundTitle'>
-        <div className="title" >PARAMETRES</div>
+        <div className="title" >PARAMÈTRES</div>
       </Grid>
       <Grid container >
         <Snackbar
@@ -128,17 +128,17 @@ export default function Settings() {
         </Grid>
         <Grid container xs={6}>
           <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
-            <div style={{ fontWeight: 'bold', color: '#063061' }}>Ajouter un prénom : </div>
+            <div style={{ fontWeight: 'bold', color: '#063061' }}>Ajouter une destination : </div>
             <TextField style={{ marginLeft: '1em', marginRight: '1em' }} variant="outlined" value={add} onChange={(event) => setAdd(event.target.value)} />
             <Button disabled={add ? false : true} style={{ fontWeight: 'bold', color: '#CDAC38' }} onClick={addName}>Confirmer</Button>
           </Grid>
           <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
-            <div style={{ fontWeight: 'bold', color: '#063061' }}>Supprimer un prénom : </div>
+            <div style={{ fontWeight: 'bold', color: '#063061' }}>Supprimer une destination : </div>
             <TextField style={{ marginLeft: '1em', marginRight: '1em' }} variant="outlined" value={del} onChange={(event) => setDel(event.target.value)} />
             <Button disabled={del ? false : true} style={{ fontWeight: 'bold', color: '#CDAC38' }} onClick={deleteName}>Confirmer</Button>
           </Grid>
           <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
-            <div style={{ fontWeight: 'bold', color: '#063061' }}>Modifier un prénom : </div>
+            <div style={{ fontWeight: 'bold', color: '#063061' }}>Modifier une destination : </div>
             <TextField style={{ marginLeft: '1em', marginRight: '1em' }} label="Ancien prénom" variant="outlined" value={updateFrom} onChange={(event) => setUpdateFrom(event.target.value)} />
             <TextField style={{ marginLeft: '1em', marginRight: '1em' }} label="Nouveau prénom" variant="outlined" value={updateTo} onChange={(event) => setUpdateTo(event.target.value)} />
             <Button disabled={updateFrom && updateTo ? false : true} style={{ fontWeight: 'bold', color: '#CDAC38' }} onClick={updateName}>Confirmer</Button>
