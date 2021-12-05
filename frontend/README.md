@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Trello 
+
+Voici l'outil de gestion des tâches que nous avons décider d'utiliser pour mener à bien ce projet.
+Le lien public de notre tableau des tâches à effectuer, réparties entre les membres de l'équipe avec des deadlines précises :
+https://trello.com/b/ilxVAO8U
+
+### Figma 
+
+Voici l'outil sur lequel nous avons effectué notre mock-up 
+Le lien public qui suit vous permettra directement d'atteindre ce travail :
+https://www.figma.com/file/RwtxDNgNyEUNXkpJV7EqDb/Projet_Techno_Web_Menard_Lucas_Lapalut_Pierre?node-id=0%3A1
+
