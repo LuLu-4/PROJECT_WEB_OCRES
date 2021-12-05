@@ -107,41 +107,41 @@ export default function Settings() {
           <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
             <div style={{ fontWeight: 'bold', color: '#063061' }}>Ville pour la météo : </div>
             <TextField style={{ marginLeft: '1em', marginRight: '1em' }} variant="outlined" value={weatherCity} onChange={(event) => setWeatherCity(event.target.value)} />
-            <Button disabled={weatherCity ? false : true} style={{ fontWeight: 'bold', color: '#CDAC38' }} onClick={changeWeatherCity}>Confirmer</Button>
+            <Button disabled={weatherCity ? false : true} style={{ backgroundColor: '#FFE9B0', fontWeight: 'bold', color: 'white', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)' }} onClick={changeWeatherCity}>Confirmer</Button>
           </Grid>
           <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
             <div style={{ fontWeight: 'bold', color: '#063061' }}>Changer de monnaie : </div>
             <TextField style={{ marginLeft: '1em', marginRight: '1em' }} variant="outlined" value={crypto} onChange={(event) => setCrypto(event.target.value)} />
-            <Button disabled={crypto ? false : true} style={{ fontWeight: 'bold', color: '#CDAC38' }} onClick={changeCrypto}>Confirmer</Button>
+            <Button disabled={crypto ? false : true} style={{ backgroundColor: '#FFE9B0', fontWeight: 'bold', color: 'white', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)' }} onClick={changeCrypto}>Confirmer</Button>
           </Grid>
           <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
             <div style={{ fontWeight: 'bold', color: '#063061' }}>Changer année film : </div>
             <TextField style={{ marginLeft: '1em', marginRight: '1em' }} variant="outlined" value={movieYear} onChange={(event) => setMovieYear(event.target.value)} />
-            <Button disabled={movieYear ? false : true} style={{ fontWeight: 'bold', color: '#CDAC38' }} onClick={changeMovieYear}>Confirmer</Button>
+            <Button disabled={movieYear ? false : true} style={{ backgroundColor: '#FFE9B0', fontWeight: 'bold', color: 'white', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)' }} onClick={changeMovieYear}>Confirmer</Button>
           </Grid>
           <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
             <div style={{ fontWeight: 'bold', color: '#063061' }}>Modifier le graphe : </div>
             <TextField style={{ marginLeft: '1em', marginRight: '1em' }} label="Crypto" variant="outlined" value={changeCryptoGraphe} onChange={(event) => setChangeCryptoGraphe(event.target.value)} />
             <TextField style={{ marginLeft: '1em', marginRight: '1em' }} label="Monnaie" variant="outlined" value={changeMonnaieGraphe} onChange={(event) => setChangeMonnaieGraphe(event.target.value)} />
-            <Button disabled={changeCryptoGraphe && changeMonnaieGraphe ? false : true} style={{ fontWeight: 'bold', color: '#CDAC38' }} onClick={changeCryptoGrapĥe}>Confirmer</Button>
+            <Button disabled={changeCryptoGraphe && changeMonnaieGraphe ? false : true} style={{ backgroundColor: '#FFE9B0', fontWeight: 'bold', color: 'white', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)' }} onClick={changeCryptoGrapĥe}>Confirmer</Button>
           </Grid>
         </Grid>
         <Grid container xs={6}>
           <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
             <div style={{ fontWeight: 'bold', color: '#063061' }}>Ajouter une destination : </div>
             <TextField style={{ marginLeft: '1em', marginRight: '1em' }} variant="outlined" value={add} onChange={(event) => setAdd(event.target.value)} />
-            <Button disabled={add ? false : true} style={{ fontWeight: 'bold', color: '#CDAC38' }} onClick={addName}>Confirmer</Button>
+            <Button disabled={add ? false : true} style={{ backgroundColor: '#FFE9B0', fontWeight: 'bold', color: 'white', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)' }} onClick={addName}>Confirmer</Button>
           </Grid>
           <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
             <div style={{ fontWeight: 'bold', color: '#063061' }}>Supprimer une destination : </div>
             <TextField style={{ marginLeft: '1em', marginRight: '1em' }} variant="outlined" value={del} onChange={(event) => setDel(event.target.value)} />
-            <Button disabled={del ? false : true} style={{ fontWeight: 'bold', color: '#CDAC38' }} onClick={deleteName}>Confirmer</Button>
+            <Button disabled={del ? false : true} style={{ backgroundColor: '#FFE9B0', fontWeight: 'bold', color: 'white', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)' }} onClick={deleteName}>Confirmer</Button>
           </Grid>
           <Grid container xs={12} className='container' justifyContent="left" alignItems="center">
             <div style={{ fontWeight: 'bold', color: '#063061' }}>Modifier une destination : </div>
-            <TextField style={{ marginLeft: '1em', marginRight: '1em' }} label="Ancien prénom" variant="outlined" value={updateFrom} onChange={(event) => setUpdateFrom(event.target.value)} />
-            <TextField style={{ marginLeft: '1em', marginRight: '1em' }} label="Nouveau prénom" variant="outlined" value={updateTo} onChange={(event) => setUpdateTo(event.target.value)} />
-            <Button disabled={updateFrom && updateTo ? false : true} style={{ fontWeight: 'bold', color: '#CDAC38' }} onClick={updateName}>Confirmer</Button>
+            <TextField style={{ marginLeft: '1em', marginRight: '1em' }} label="Ancienne destination" variant="outlined" value={updateFrom} onChange={(event) => setUpdateFrom(event.target.value)} />
+            <TextField style={{ marginLeft: '1em', marginRight: '1em' }} label="Nouvelle destination" variant="outlined" value={updateTo} onChange={(event) => setUpdateTo(event.target.value)} />
+            <Button disabled={updateFrom && updateTo ? false : true} style={{ backgroundColor: '#FFE9B0', fontWeight: 'bold', color: 'white', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)' }} onClick={updateName}>Confirmer</Button>
           </Grid>
         </Grid>
       </Grid>
